@@ -198,6 +198,10 @@ bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 3%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 3%- unmute
 bindsym XF86AudioMute exec amixer -D pulse sset Master toggle
 
+# brightness settings
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5
+
 # lock screen
 bindsym Mod4+l exec bash ~/.i3/lock.sh
 
@@ -205,7 +209,10 @@ bindsym Mod4+l exec bash ~/.i3/lock.sh
 exec_always synapse
 exec_always nm-applet
 exec_always setxkbmap -option caps:escape
+exec_always blueman-applet
 
 # special instructions for programs
 
 for_window [class="^Spotify$"] floating enable
+for_window [class="mupen64plus"] floating enable
+for_window [class="mupen64plus"] resize set 640 480
