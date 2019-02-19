@@ -12,10 +12,12 @@ ZSH_THEME="mh-stig"
 # or the etc/inputrc file
 # The ^[ from showkey is replaced with \e
 
+
 bindkey "\e[1~" beginning-of-line
 bindkey "\e[4~" end-of-line
-bindkey "\eOc" forward-word
-bindkey "\eOd" backward-word
+bindkey "\e[c" forward-word
+bindkey "\e[d" backward-word
+
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
