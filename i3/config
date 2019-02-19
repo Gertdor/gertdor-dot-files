@@ -29,10 +29,10 @@ font pango:monospace 8
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
-set $up j
-set $down k
-set $left h
-set $right l
+set $up k
+set $down l
+set $left j
+set $right ö
 
 # use Mouse+Mod1 to drag floating windows to their wanted position
 floating_modifier Mod1
@@ -203,13 +203,12 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 5
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5
 
 # lock screen
-bindsym Mod4+l exec bash ~/.i3/lock.sh
+bindsym Mod4+l exec bash ~/gertdor-dot-files/i3/lock.sh
 
 # programs run on start up
-exec_always synapse
-exec_always nm-applet
+exec_always nm-applet --no-agent
 exec_always setxkbmap -option caps:escape
-exec_always blueman-applet
+exec_always blueman-applet --no-agent
 
 # special instructions for programs
 

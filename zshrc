@@ -7,6 +7,16 @@ export ZSH=/home/basse/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="mh-stig"
 
+# rebind special keys
+# see https://bbs.archlinux.org/viewtopic.php?id=26110
+# or the etc/inputrc file
+# The ^[ from showkey is replaced with \e
+
+bindkey "\e[1~" beginning-of-line
+bindkey "\e[4~" end-of-line
+bindkey "\eOc" forward-word
+bindkey "\eOd" backward-word
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -60,13 +70,6 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"

@@ -9,9 +9,9 @@ call vundle#begin()
 "Start plugins
 Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle
 Plugin 'vim-scripts/indentpython.vim' "Better indentation for python
-"Plugin 'vim-syntastic/syntastic' " syntax highlight
-"Plugin 'ambv/black' " python style guide
-"Plugin 'Valloric/YouCompleteMe' " autocomplete plugin
+Plugin 'vim-syntastic/syntastic' " syntax highlight
+Plugin 'ambv/black' " python style guide
+Plugin 'Valloric/YouCompleteMe' " autocomplete plugin
 
 "End plugins
 
