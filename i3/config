@@ -29,10 +29,10 @@ font pango:monospace 8
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
-set $up k
-set $down l
-set $left j
-set $right ö
+set $up j
+set $down k
+set $left h
+set $right l
 
 # use Mouse+Mod1 to drag floating windows to their wanted position
 floating_modifier Mod1
@@ -74,11 +74,12 @@ bindsym Mod1+Shift+Down move down
 bindsym Mod1+Shift+Up move up
 bindsym Mod1+Shift+Right move right
 
-# split in horizontal orientation
-bindsym Mod1+g split g # h taken by movement
+# split in horizontal orientati
+# h taken by movement
+bindsym Mod1+g split horizontal
 
 # split in vertical orientation
-bindsym Mod1+v split v
+bindsym Mod1+v split vertical
 
 # enter fullscreen mode for the focused container
 bindsym Mod1+f fullscreen toggle
