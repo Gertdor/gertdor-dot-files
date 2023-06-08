@@ -27,7 +27,7 @@ sudo apt-get -y install code
 
 # Copy over dot files
 
-touch ~/.personal-aliases.sh
+touch ~/.project-aliases.sh
 ln -s gertdor-dot-files/zshrc .zshrc
 ln -s gertdor-dot-files/vimrc .vimrc
 ln -s gertdor-dot-files/i3 .i3

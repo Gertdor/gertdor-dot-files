@@ -60,7 +60,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 source ~/.personal-aliases.sh
-alias pa="vim ~/.personal-aliases.sh"
+alias pa="vim ~/.project-aliases.sh"
 alias zshrc="vim ~/.zshrc"
 
 # Example aliases
