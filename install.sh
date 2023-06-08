@@ -8,14 +8,26 @@ gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll true
 
 # Install base programs
 
-sudo apt-get -y install vim
-sudo apt-get -y install i3
-sudo apt-get -y install curl
-sudo apt-get -y install htop
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get -y install vim i3 curl htop wget gpg
+
+# Install other useful programs
+sudo apt-get -y install flameshot pip blueman tmux scrot imagemick
+
+# Install vs-code
+sudo apt-get install wget gpg
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+rm -f packages.microsoft.gpg
+sudo apt-get -y install apt-transport-https
+sudo apt-get update
+sudo apt-get -y install code
 
 # Copy over dot files
 
-touch ~/.personal-aliases
+touch ~/.personal-aliases.sh
 ln -s gertdor-dot-files/zshrc .zshrc
 ln -s gertdor-dot-files/vimrc .vimrc
 ln -s gertdor-dot-files/i3 .i3

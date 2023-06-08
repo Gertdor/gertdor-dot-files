@@ -191,8 +191,8 @@ bindsym Mod1+Shift+f exec firefox
 bindsym Mod1+Shift+g exec slack
 
 # move workspace to left and right monitors
-bindsym Mod4+Right move workspace to output right
-bindsym Mod4+Left move workspace to output left
+bindsym Mod4+1 move workspace to output eDP-1
+bindsym Mod4+2 move workspace to output HDMI-1
 
 # sound settings
 bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 3%+ unmute

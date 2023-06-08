@@ -6,3 +6,8 @@
   s = status
 [core]
 	editor = vim
+[user]
+	email = sebastian.norlin@scionova.com
+	name = Sebastian Norlin
+[credential]
+	useHttpPath = false
