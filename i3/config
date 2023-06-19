@@ -213,6 +213,5 @@ exec_always blueman-applet --no-agent
 
 # special instructions for programs
 
-for_window [class="^Spotify$"] floating enable
 for_window [class="mupen64plus"] floating enable
 for_window [class="mupen64plus"] resize set 640 480

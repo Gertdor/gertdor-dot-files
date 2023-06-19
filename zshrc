@@ -40,7 +40,7 @@ plugins=(git z)
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/basse/.cabal/bin:/home/basse/bin:/home/basse/.local/bin:/home/basse/.local/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/basse/.cabal/bin:/home/basse/bin:/home/basse/.local/bin:/home/basse/.local/bin/:/home/basse/.cargo/bin:/home/basse/go/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -59,7 +59,7 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-source ~/.personal-aliases.sh
+source ~/.project-aliases.sh
 alias pa="vim ~/.project-aliases.sh"
 alias zshrc="vim ~/.zshrc"
 
